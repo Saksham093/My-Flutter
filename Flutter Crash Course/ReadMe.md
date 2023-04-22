@@ -53,6 +53,8 @@ We will cover these:
 
 ## **Install Flutter in Android Studio**
 
+What we will cover :
+
 1. Download Flutter SDK.
 2. Set Envirornment Variables.
 3. Install Flutter and Dart Plugins.
@@ -86,3 +88,24 @@ add this path : `C:\src\flutter\bin` with variable name as `PATH`.
 
 >Note : You also need to add the Android Studio path the env. variable. Add this path : `C:\Users\AppData\Local\Android\Sdk` with Variable as `'JAVA_HOME'` or `'ANDROID_HOME'`. (AppData is hidden bydefault)
 
+### **Setup Flutter and Dart Plugin in it.**
+
+Open Android studio, Choose plugin section from Left side. Search for Flutter and Dart install them both.
+
+![Image](Images/plugin.jpg)
+
+Restart Your IDE ...
+
+Open CMD -> run `flutter doctor`
+
+it may take time.
+
+### **Accept The Licenses**
+
+Open -> Run the command:
+
+`flutter doctor --android-licenses` If asked to accpet, accept the license.
+
+If you come-up with any error then, Goto Android studio -> `Appearnance & Behavior` -> `System Settings` -> `Andoid SDK` -> Select `SDK Tools`. Make sure the `Android SKD Command-line Tools` is installed if not install it. then rerun the lincese.
+
+---
