@@ -1,33 +1,22 @@
+import 'screens/Dashboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      title: 'My Flutter App',
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('DashBoard'.toUpperCase()),
-          backgroundColor: Colors.blueGrey,
-        ),
-        body: const Center(
-          child: Text.rich(
-            TextSpan(
-              text: 'Hello ',
-              children: [
-                TextSpan(
-                  text: 'Saksham ',
-                  style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
-                ),
-                TextSpan(
-                  text: '!',
-                  style: TextStyle(fontSize: 10.0),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    ),
+    const MyApp(),
   );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: 'My Flutter App',
+      themeMode: ThemeMode.system,
+      debugShowCheckedModeBanner: false,
+      home: Dashboard(),
+    );
+  }
 }
