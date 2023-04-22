@@ -29,3 +29,17 @@ The `Lib` folder is the main folder where futter code resides.
 
 ---
 The `pubspec.yaml` file is the main like as in the Android `build.`gradle` file. Where packages and use assets.
+
+---
+**Q. How Flutter works?**
+
+In Flutter, the code starts with `void main()` the void_main() contains all the code and `runApp()` excute the applicate. Insite the runApp(), buttons, text and other widgets.
+
+---
+
+Once you run the code. You don't need to run again-again, use `hot reload`.
+
+```cli
+<!-- To Aline the code press -->
+Alt + Ctrl + L
+```
