@@ -92,7 +92,7 @@ add this path : `C:\src\flutter\bin` with variable name as `PATH`.
 
 Open Android studio, Choose plugin section from Left side. Search for Flutter and Dart install them both.
 
-![Image](Images/plugin.jpg)
+<img src="Images/plugin.jpg"  width="500">
 
 Restart Your IDE ...
 
