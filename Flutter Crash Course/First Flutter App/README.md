@@ -236,7 +236,7 @@ But for simplicity, I have classified it into categories
 |   | Expanded |
 |   | Positioned |
 
-`Explore Core Widgets`
+### Explore Core Widgets
 
 * Image/Icon
 * Container
@@ -250,5 +250,73 @@ But for simplicity, I have classified it into categories
 * Floating Action Button
 * Stsck
 * Positioned
+
+---
+
+## **Add Image**
+
+We have 2 methods for adding images
+
+### **Assets**
+
+Create an `Assets` Directory in the root folder.
+
+<img src="../Images/images_path_assets.jpg"  width="300">
+
+and to use the images, need to add the path in `pubspec`.yaml`
+
+<img src="../Images/pubspec_assets.jpg"  width="400">
+
+and run `Pub get`.
+
+```dart
+Image(
+  image.AssetsImages('path')
+)
+
+<!-- or -->
+
+Image.asset("Path")
+```
+
+### **Network**
+
+```dart
+Image(
+  image.NetworkImages('path')
+)
+
+<!-- or -->
+
+Image.Network("Path")
+```
+
+The Code for adding Images using Assets
+
+```dart
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+
+class Dashboard extends StatelessWidget {
+  const Dashboard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('DashBoard'.toUpperCase()),
+        backgroundColor: Colors.blueGrey,
+      ),
+      body: const Image(
+        image: AssetImage('assets/images/lion_vector.jpg'),
+        width: 300.0,
+        height: 300.0,
+        fit: BoxFit.contain,
+      ),
+    );
+  }
+}
+```
 
 ---

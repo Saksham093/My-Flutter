@@ -1,5 +1,7 @@
 # **My Flutter Repo**
 
+<img src="./Flutter%20Crash%20Course/Images/Banner_01.png"  width="800">
+
 This repository is a collection of my Flutter projects, documentation, and course work. Here you will find code for various Flutter apps and examples that I have built, as well as notes and resources from any Flutter courses that I have taken.
 
 ## **Getting Started**

@@ -12,9 +12,12 @@ class Dashboard extends StatelessWidget {
         title: Text('DashBoard'.toUpperCase()),
         backgroundColor: Colors.blueGrey,
       ),
-      body: Center(child: Text("Random Value is : ${getNumber()}")),
+      body: const Image(
+        image: AssetImage('assets/images/lion_vector.jpg'),
+        width: 300.0,
+        height: 300.0,
+        fit: BoxFit.contain,
+      ),
     );
   }
 }
-
-int getNumber() => Random().nextInt(100);

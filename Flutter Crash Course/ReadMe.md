@@ -1,5 +1,7 @@
 # **Flutter Crash Course 2023**
 
+<img src="Images/Banner_02.png"  width="800">
+
 This is my first Flutter course. This is avaluble on YouTube : **[Link](https://www.youtube.com/playlist?list=PL5jb9EteFAODi35jPznP37hnR2sTHOOTU)**
 
 ## **Course Outline**
