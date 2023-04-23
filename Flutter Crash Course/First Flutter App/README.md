@@ -174,3 +174,81 @@ class Dashboard extends StatelessWidget {
 ---
 
 ## **Add Logic to Application**
+
+In this section, a simple logic is implemented where each time a new `random` number is displayed.
+
+>`screens/Dashboard.dart`
+
+```dart
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+
+class Dashboard extends StatelessWidget {
+  const Dashboard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('DashBoard'.toUpperCase()),
+        backgroundColor: Colors.blueGrey,
+      ),
+      body: Center(child: Text("Random Value is : ${getNumber()}")),
+    );
+  }
+}
+
+int getNumber() => Random().nextInt(100);
+
+```
+
+---
+
+## Everything in Flutter is almost a **Widget**
+
+**Q. What Google says about widgets?**
+
+Flutter widgets are built using a modern framework that takes inspiration from React. The central idea is that you `build your UI` out of widgets. Widgets describe what their view should look like given their current configuration and state.
+
+In general Flutter widgets are classified into two categories,
+
+* Stateless Widget
+* Stateful Widget
+
+However, you can find more classes in the hierarchy of Flutter [sources](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/framework.dart).
+
+<img src="../Images/types_of_widgets.png"  width="600">
+
+But for simplicity, I have classified it into categories
+
+| Display Widgets | Layout Widgets |
+|-----------------|---|
+| Text | Center |
+| TextSpan | Container |
+| Text.rich | Row |
+| Image/Icon | Column |
+| Button | Table |
+| Chip | Stack |
+| Badges | Positioned |
+| Alerts | Padding/Margin |
+| SnakeBar | ListView |
+|   | Expanded |
+|   | Positioned |
+
+`Explore Core Widgets`
+
+* Image/Icon
+* Container
+* Elevated Button
+* AppBar with Icon Button
+* Row
+* Column
+* Expanded
+* ListView
+* Navigation Drawer
+* Floating Action Button
+* Stsck
+* Positioned
+
+---
