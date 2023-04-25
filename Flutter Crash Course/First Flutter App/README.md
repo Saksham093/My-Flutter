@@ -39,8 +39,8 @@ In Flutter, the code starts with `void main()` the void_main() contains all the 
 
 Once you run the code. You don't need to run again-again, use `hot reload`.
 
-```cli
-<!-- To Aline the code press -->
+```dart
+// To Aline the code press
 Alt + Ctrl + L
 ```
 
@@ -274,7 +274,7 @@ Image(
   image.AssetsImages('path')
 )
 
-<!-- or -->
+// or
 
 Image.asset("Path")
 ```
@@ -286,7 +286,7 @@ Image(
   image.NetworkImages('path')
 )
 
-<!-- or -->
+// or
 
 Image.Network("Path")
 ```
@@ -318,5 +318,94 @@ class Dashboard extends StatelessWidget {
   }
 }
 ```
+
+---
+
+## **Add Material and Font Awesome Icons**
+
+Learn to add Icons from Two Core Assets.
+
+### **Material Icons**
+
+```dart
+To Use : Icons
+To Add : Default
+```
+
+The Code Implementation `Dashboard.dart`.
+
+```dart
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+
+class Dashboard extends StatelessWidget {
+  const Dashboard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: IconButton(
+          icon: const Icon(
+            Icons.account_balance_wallet,
+          ),
+          onPressed: () {},
+          iconSize: 100,
+          color: Colors.black,
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+### **Font Awesome Icons**
+
+```dart
+To Use : Fonstawesomeicons
+To Add : Dependency Required
+```
+
+Before implementation, you need to add `font_awesome_flutter: ^10.4.0 (latest Version)` in `pubspec.yaml` file.
+
+```dart
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.4.0
+
+```
+
+Now, Code the `Dashboard.dart`.
+
+```dart
+import 'dart:math';
+
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+class Dashboard extends StatelessWidget {
+  const Dashboard({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: IconButton(
+          icon: const Icon(FontAwesomeIcons.apple),
+          onPressed: () {},
+          iconSize: 80,
+          color: Colors.black,
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+and also code for `Flutter IconButton()`.
 
 ---

@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -8,15 +9,13 @@ class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('DashBoard'.toUpperCase()),
-        backgroundColor: Colors.blueGrey,
-      ),
-      body: const Image(
-        image: AssetImage('assets/images/lion_vector.jpg'),
-        width: 300.0,
-        height: 300.0,
-        fit: BoxFit.contain,
+      body: Center(
+        child: IconButton(
+          icon: const Icon(FontAwesomeIcons.apple),
+          onPressed: () {},
+          iconSize: 80,
+          color: Colors.black,
+        ),
       ),
     );
   }
